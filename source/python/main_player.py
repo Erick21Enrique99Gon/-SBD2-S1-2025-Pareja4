@@ -39,7 +39,7 @@ conn = psycopg2.connect(database = "bd2_2s24",
                         host= 'localhost',
                         password = "root1234",
                         port = 5432,
-                        options="-c search_path=prueba2")
+                        options="-c search_path=public")
 
 
 dataframeP = pd.read_csv("./csv/player.csv", sep=',' )

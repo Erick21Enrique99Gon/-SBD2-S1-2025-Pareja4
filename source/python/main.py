@@ -1,11 +1,11 @@
 import pandas as pd
 import psycopg2
 print('hola mundo')
-# conn = psycopg2.connect(database = "bd2_2s24", 
-#                         user = "admin", 
-#                         host= 'localhost',
-#                         password = "root1234",
-#                         port = 5432)
+conn = psycopg2.connect(database = "bd2_2s24", 
+                        user = "admin", 
+                        host= 'localhost',
+                        password = "root1234",
+                        port = 5432)
 
 # dateframeP = pd.read_csv("./csv/player.csv", sep=',' )
 # dateframeDCS = pd.read_csv("./csv/draft_combine_stats.csv", sep=',' )
