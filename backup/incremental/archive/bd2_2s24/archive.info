@@ -1,0 +1,14 @@
+[backrest]
+backrest-format=5
+backrest-version="2.54.2"
+
+[db]
+db-id=1
+db-system-id=7497364432133017639
+db-version="17"
+
+[db:history]
+1={"db-id":7497364432133017639,"db-version":"17"}
+
+[backrest]
+backrest-checksum="dc0aebd193ed88de04f005959d3da0aab93826d4"
