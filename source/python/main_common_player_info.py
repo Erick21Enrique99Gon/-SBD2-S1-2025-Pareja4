@@ -11,7 +11,7 @@ conn = psycopg2.connect(
     options="-c search_path=public"
 )
 
-# Leer el CSV
+# Leer el CSV source\python\csv\common_player_info.csv
 dataframe = pd.read_csv("./csv/common_player_info.csv", sep=',')
 
 cur = conn.cursor()
@@ -61,6 +61,7 @@ for row in dataframe.itertuples(index=False):
     );
     """
     try:
+        print(comando)
         cur.execute(comando)
     except Exception as e:
         print(f"Error en fila con person_id={row.person_id}: {e}")
